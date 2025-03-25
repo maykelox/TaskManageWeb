@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Tareas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gestión de Tareas</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Tareas</a></li>
+            <li><a href="#">Usuarios</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section class="task-container">
+            <h2>Lista de Tareas</h2>
+            <ul id="task-list">
+                <!-- Aquí se insertarán las tareas dinámicamente -->
+            </ul>
+        </section>
+        
+        <section class="task-form">
+            <h2>Agregar Nueva Tarea</h2>
+            <form id="taskForm">
+                <input type="text" id="taskTitle" placeholder="Título de la tarea" required>
+                <textarea id="taskDescription" placeholder="Descripción" required></textarea>
+                <select id="taskStatus">
+                    <option value="Pendiente">Pendiente</option>
+                    <option value="En proceso">En proceso</option>
+                    <option value="Completada">Completada</option>
+                </select>
+                <button type="submit">Agregar Tarea</button>
+            </form>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
