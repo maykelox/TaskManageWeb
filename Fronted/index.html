@@ -5,20 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestión de Tareas</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brands.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Gestión de Tareas</h1>
-    </header>
-    
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Tareas</a></li>
-            <li><a href="#">Usuarios</a></li>
-        </ul>
-    </nav>
-    
+    <div class="container">
+        <nav>
+            <div class="navbar">
+                <div class="logo">
+                    <img src="/img/3.jpg" alt="">
+                    <h2>Miguel Brito</h2>
+                    <span>Developer</span>
+                </div>
+                <ul>
+                    <li><a href="#">
+                        <i class="fa-solid fa-house-chimney"></i>
+                        <span class="nav-item">Inicio</span>
+                    </a></li>
+                    <li><a href="#">
+                        <i class="fa-solid fa-list-check"></i>
+                        <span class="nav-item">Tareas</span>
+                    </a></li>
+                    <li><a href="#">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="nav-item">Usuario</span>
+                    </a></li>
+                    <li><a href="#">
+                        <i class="fa-solid fa-filter"></i>
+                        <span class="nav-item">Registro</span>
+                    </a></li>
+                    <li><a href="#">
+                        <i class="fa-solid fa-gear"></i>
+                        <span class="nav-item">Configuracion</span>
+                    </a></li>
+                    <li><a href="#" class="Logout">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span class="nav-item">Cerrar Seccion</span>
+                    </a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="main">
+            <div class="top-menu"></div>
+            <div class="project"></div>
+
+        </section>
+    </div>
+
+
+
+<!--     
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Tareas</a></li>
+                <li><a href="#">Usuarios</a></li>
+                <li><a href="#">Registro</a></li>
+            </ul>
+        </nav>
+    </div>
     <main>
         <section class="task-container">
             <h2>Lista de Tareas</h2>
@@ -40,7 +86,7 @@
                 <button type="submit">Agregar Tarea</button>
             </form>
         </section>
-    </main>
+    </main> -->
     
     <script src="script.js"></script>
 </body>

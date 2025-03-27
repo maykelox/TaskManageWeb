@@ -1,111 +1,106 @@
-/* Paleta de colores */
-:root {
-    --primary-color: #1E3A8A; /* Azul oscuro para profesionalismo */
-    --secondary-color: #DC2626; /* Rojo para resaltar */
-    --background-color: #F3F4F6; /* Gris claro para fondo */
-    --text-color: #1F2937; /* Gris oscuro para textos */
-    --white: #FFFFFF;
-}
-
-/* Reset y estilos base */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
     margin: 0;
     padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    line-height: 1.6;
+    background: rgb(226, 226, 226);
 }
 
-/* Contenedor principal */
 .container {
-    max-width: 1200px;
+    display: flex;
+    width: 1200px;
     margin: auto;
-    padding: 20px;
+}
+.logo img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
 }
 
-/* Header */
-header {
-    background: var(--primary-color);
-    color: var(--white);
-    padding: 20px;
+nav {
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 280px;
+    height: 100vh;
+    background: #ffff;
+}
+
+.navbar {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo {
+    margin: 1rem 0;
+    padding-bottom: 3rem;
     text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
 }
 
-/* Botones */
-button {
-    background: var(--secondary-color);
-    color: var(--white);
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 1rem;
-    border-radius: 5px;
-    transition: 0.3s;
+.logo h2 {
+    margin-top: 1rem;
 }
 
-button:hover {
-    background: #B91C1C; /* Rojo más oscuro */
+.logo span {
+    font-size: 15px;
+    color: rgb(116, 112, 112);
 }
 
-/* Formulario */
-form {
-    background: var(--white);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+ul {
+    width: 80%; 
+    margin: 0 auto;
+}
+li {
+    padding-bottom: 20px;
 }
 
-form label {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
+li a {
+    color: rgb(83, 83, 83);
 }
 
-form input, form select {
+li a :hover {
+    color: rgb(114, 207, 207);
+    transition: 1s;
+}
+
+nav-item {
+    margin-left: 5px;
+}
+
+nav i {
+    font-size: 16px;
+    text-align: center;
+}
+
+.Logout {
+    position: absolute;
+    bottom: 20px;
+}
+
+/*Main Section*/
+
+.main {
+    padding: 1rem 0 0 0;
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #D1D5DB;
-    border-radius: 5px;
 }
 
-/* Tabla de datos */
-table {
+.top-menu, .project {
     width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    background: var(--white);
-    border-radius: 10px;
-    overflow: hidden;
+    border-bottom: 1px solid rgb(192, 192, 192);
 }
 
-table th, table td {
-    padding: 15px;
-    text-align: left;
-}
-
-table th {
-    background: var(--primary-color);
-    color: var(--white);
-}
-
-table tr:nth-child(even) {
-    background: #E5E7EB;
-}
-
-/* Responsividad */
-@media (max-width: 768px) {
-    .container {
-        padding: 10px;
-    }
-    header {
-        font-size: 1.2rem;
-    }
+.top-menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 1rem 3rem;
 }
